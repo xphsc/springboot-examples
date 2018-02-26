@@ -20,6 +20,7 @@
         <module>spring-boot-shiro</module>
         <module>spring-boot-redis</module>
         <module>spring-boot-jersey</module>
+        <module>spring-boot-kotlin</module>
     </modules>
 
     <parent>
