@@ -1,4 +1,4 @@
-package com.xphsc.jpa.model;
+package com.xphsc.hibernate.model;
 
 import lombok.Data;
 
@@ -10,9 +10,9 @@ import java.io.Serializable;
  * Created by ${huipei.x} on 2017-2-25.
  * qq群593802274
  */
-@Entity
-@Table(name="T_USER")
 @Data
+@Entity(name="t_user")
+//@Table(name="t_user")
 public class User implements Serializable{
 
     @Id

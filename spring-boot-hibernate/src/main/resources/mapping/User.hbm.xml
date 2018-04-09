@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.xphsc.hibernate.model.User" table="t_user">
+		<id name="id">
+		</id>
+		<property name="age"  type="java.lang.String"/>
+		<property name="uname" type="java.lang.String"/>
+		<property name="password" type="java.lang.String"></property>
+    </class>
+	
+</hibernate-mapping>

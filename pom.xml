@@ -9,8 +9,9 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>spring-boot-jpa</module>
         <module>spring-boot-common</module>
+        <module>spring-boot-jpa</module>
+        <module>spring-boot-hibernate</module>
         <module>spring-boot-mybatis</module>
         <module>spring-boot-thymeleaf</module>
         <module>spring-boot-jsp</module>
@@ -21,6 +22,9 @@
         <module>spring-boot-redis</module>
         <module>spring-boot-jersey</module>
         <module>spring-boot-kotlin</module>
+        <module>spring-boot-resteasy</module>
+        <module>spring-boo-activiti</module>
+
     </modules>
 
     <parent>

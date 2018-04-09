@@ -2,6 +2,7 @@ package com.xphsc.jpa.service.impl;
 
 import com.github.xphsc.bean.BeanByRefMapper;
 import com.github.xphsc.collect.Lists;
+import com.querydsl.core.types.QBean;
 import com.xphsc.jpa.model.User;
 import com.xphsc.jpa.model.response.UserDTO;
 import com.xphsc.jpa.repository.dao.UserRepository;
@@ -20,10 +21,12 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private UserRepository userRepository;
 
+    @Override
     public List<UserDTO> listUser(){
         List<UserDTO> userDTOList= Lists.newArrayList();
         List<User>  userList=userRepository.findAll();
-        userDTOList= BeanByRefMapper.copyByRefListMapper(userList,UserDTO.class);
+        userDTOList= BeanByRefMapper.copyByRefListMapper(userList, UserDTO.class);
         return userDTOList;
     }
+
 }

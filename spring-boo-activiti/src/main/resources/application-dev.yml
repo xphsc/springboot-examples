@@ -1,5 +1,5 @@
 server:
-  port: 9091
+  port: 9102
 
 spring:
       http:
@@ -9,7 +9,7 @@ spring:
       datasource:
         default:
               name: test_mysql
-              url: jdbc:mysql://localhost:3306/test_mysql?useUnicode=true&characterEncoding=UTF-8
+              url: jdbc:mysql://localhost:3306/activiti?useUnicode=true&characterEncoding=UTF-8
               username: root
               password: root
               type: com.alibaba.druid.pool.DruidDataSource

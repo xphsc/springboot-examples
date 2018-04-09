@@ -20,6 +20,7 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private UserMapper userMapper;
 
+    @Override
     public List<UserDTO> listUser(){
         List<UserDTO> userDTOList= Lists.newArrayList();
         List<User>  userList=userMapper.selectAll();

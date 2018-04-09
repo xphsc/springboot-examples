@@ -11,5 +11,16 @@
 
     <artifactId>spring-boot-shiro</artifactId>
 
-
+<dependencies>
+    <dependency>
+        <artifactId>spring-boot-common</artifactId>
+        <groupId>${parent.groupId}.${parent.artifactId}</groupId>
+        <version>${parent.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>org.apache.shiro</groupId>
+        <artifactId>shiro-spring</artifactId>
+        <version>1.4.0</version>
+    </dependency>
+</dependencies>
 </project>

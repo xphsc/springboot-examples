@@ -1,5 +1,5 @@
 server:
-  port: 9091
+  port: 9101
 
 spring:
       http:
@@ -28,3 +28,17 @@ spring:
               poolPreparedStatements: true
               maxOpenPreparedStatements: 20
 
+
+
+      jpa:
+       hibernate:
+         dialect: org.hibernate.dialect.MySQL5Dialect
+#         ddl-auto: validate
+         show-sql: true
+         format_sql: false
+         current_session_context_class: thread
+         packagesToScan: com.xphsc.*.model
+         mapping: classpath:mapping/
+#         naming:
+#             physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+#         naming-strategy : org.hibernate.cfg.ImprovedNamingStrategy
