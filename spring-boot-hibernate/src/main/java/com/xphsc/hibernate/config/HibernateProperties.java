@@ -14,8 +14,8 @@ public class HibernateProperties {
         private  String showSql;
         private  String formatSql;
         private  String currentSessionContextClass;
-    private  String packagesToScan;
-    private  String mappingResources;
+        private  String packagesToScan;
+        private  String mapping;
     public String getDialect() {
         return dialect;
     }
@@ -64,11 +64,11 @@ public class HibernateProperties {
         this.packagesToScan = packagesToScan;
     }
 
-    public String getMappingResources() {
-        return mappingResources;
+    public String getMapping() {
+        return mapping;
     }
 
-    public void setMappingResources(String mappingResources) {
-        this.mappingResources = mappingResources;
+    public void setMapping(String mapping) {
+        this.mapping = mapping;
     }
 }
