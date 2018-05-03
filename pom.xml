@@ -24,7 +24,9 @@
         <module>spring-boot-kotlin</module>
         <module>spring-boot-resteasy</module>
         <module>spring-boo-activiti</module>
-
+        <module>spring-boot-beetl</module>
+        <module>spring-boot-mq</module>
+        <module>spring-boot-security</module>
     </modules>
 
     <parent>

@@ -1,5 +1,6 @@
 package com.xphsc.jpa.config;
 
+import com.xphsc.jpa.base.impl.BaseRepositoryImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -26,6 +27,7 @@ import java.util.Properties;
 @EnableJpaRepositories(
         entityManagerFactoryRef="entityManagerFactory",
         transactionManagerRef="transactionManager",
+        repositoryBaseClass = BaseRepositoryImpl.class,
         basePackages= { "com.xphsc.*.repository.dao" })
 public class JpaConfiguration {
 

@@ -1,0 +1,11 @@
+spring:
+ profiles:
+   active: dev
+logging:
+  level:
+   root:  INFO
+   org:
+    springframework:
+      web: ERROR
+   com:
+    xphsc:  INFO

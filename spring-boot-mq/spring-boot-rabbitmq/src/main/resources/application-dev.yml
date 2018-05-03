@@ -1,0 +1,11 @@
+server:
+  port: 9011
+
+spring:
+  rabbitmq:
+     URL: localhost
+     userName: admin
+     password: admin
+     post: 5672
+     queueName: queue_test
+     topicExchange:

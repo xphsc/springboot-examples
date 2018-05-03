@@ -1,0 +1,9 @@
+com\xphsc\mybatis\service\UserService.class
+com\xphsc\mybatis\model\User.class
+com\xphsc\mybatis\config\MapperScanConfig.class
+com\xphsc\mybatis\controller\UserController.class
+com\xphsc\mybatis\service\impl\UserServiceImpl.class
+com\xphsc\mybatis\base\BaseMapper.class
+com\xphsc\mybatis\model\response\UserDTO.class
+com\xphsc\mybatis\mapper\UserMapper.class
+com\xphsc\mybatis\MybatisApplication.class
