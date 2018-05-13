@@ -44,14 +44,14 @@ class JpaConfiguration {
         factoryBean.jpaVendorAdapter = jpaVendorAdapter()
         factoryBean.setJpaProperties(jpaProperties())
 
-        return factoryBean
+        return factoryBean;
     }
 
 
     @Bean
     fun jpaVendorAdapter(): JpaVendorAdapter {
         val hibernateJpaVendorAdapter = HibernateJpaVendorAdapter()
-        return hibernateJpaVendorAdapter
+        return hibernateJpaVendorAdapter;
     }
 
 

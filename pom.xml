@@ -27,12 +27,17 @@
         <module>spring-boot-beetl</module>
         <module>spring-boot-mq</module>
         <module>spring-boot-security</module>
+        <module>spring-boot-quartz</module>
+        <module>spring-boot-rpc</module>
+        <module>spring-boot-easysql</module>
+        <module>spring-boot-logger</module>
+        <module>spring-boot-aliyun</module>
     </modules>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.5.9.RELEASE</version>
+        <version>1.5.13.RELEASE</version>
         <relativePath/> 
     </parent>
     <properties>

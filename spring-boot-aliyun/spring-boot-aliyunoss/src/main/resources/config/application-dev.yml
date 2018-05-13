@@ -1,0 +1,8 @@
+server:
+  port: 8109
+aliyun:
+      oss:
+          endpoint: oss-cn-shanghai.aliyuncs.com
+          accessKey:
+          secretKey:
+ #         securityToken:

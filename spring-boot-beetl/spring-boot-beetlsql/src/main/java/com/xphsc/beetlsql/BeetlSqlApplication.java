@@ -9,8 +9,7 @@ import org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfigurati
 /**
  * Created by ${huipei.x} on 2017-2-25
  */
-@SpringBootApplication
-@EnableAutoConfiguration(exclude = {DataSourceAutoConfiguration.class, ThymeleafAutoConfiguration.class})
+@SpringBootApplication(scanBasePackages="com.xphsc")
 public class BeetlSqlApplication {
     public static void main(String[] args) {
     SpringApplication.run(BeetlSqlApplication.class, args);

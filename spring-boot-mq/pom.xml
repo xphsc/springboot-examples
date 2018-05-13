@@ -15,6 +15,7 @@
         <module>spring-boot-rabbitmq</module>
         <module>spring-boot-activemq</module>
         <module>spring-boot-alimq</module>
+        <module>spring-boot-rocketmq</module>
     </modules>
 <dependencies>
     <dependency>

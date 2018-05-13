@@ -5,30 +5,38 @@ import org.beetl.sql.core.db.MySqlStyle;
 import org.beetl.sql.ext.spring4.BeetlSqlDataSource;
 import org.beetl.sql.ext.spring4.BeetlSqlScannerConfigurer;
 import org.beetl.sql.ext.spring4.SqlManagerFactoryBean;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
+
 
 import javax.sql.DataSource;
+
 
 /**
  * Created by ${huipei.x} on 2017-2-25
  */
+@Configuration
+@EnableTransactionManagement
 public class BeetlSqlConfig {
+   /*@Autowired
+    private  DataSource datasource;*/
 
     @Bean(name = "beetlSqlScannerConfigurer")
     public BeetlSqlScannerConfigurer getBeetlSqlScannerConfigurer() {
     BeetlSqlScannerConfigurer conf = new BeetlSqlScannerConfigurer();
     conf.setBasePackage("com.xphsc");//扫描那些类可以自动注入
-    conf.setSqlManagerFactoryBeanName("sqlManagerFactoryBean");
+    conf.setSqlManagerFactoryBeanName("sqlManager");
     return conf;
 }
 
-    @Primary//sqlManager工厂(核心)
-    @Bean(name = "sqlManagerFactoryBean")
-    public SqlManagerFactoryBean getSqlManagerFactoryBean(
-            @Qualifier("datasource") DataSource datasource) {
+    //@Primary//sqlManager工厂(核心)
+    @Bean(name = "sqlManager")
+    public SqlManagerFactoryBean getSqlManagerFactoryBean( @Qualifier("datasource") DataSource datasource) {
         SqlManagerFactoryBean factory = new SqlManagerFactoryBean();
         BeetlSqlDataSource source = new BeetlSqlDataSource();
         source.setMasterSource(datasource);
@@ -43,11 +51,9 @@ public class BeetlSqlConfig {
     }
 
     @Bean(name = "txManager")//开启事务管理
-    public DataSourceTransactionManager getDataSourceTransactionManager(
-            @Qualifier("datasource") DataSource datasource) {
+    public DataSourceTransactionManager getDataSourceTransactionManager(@Qualifier("datasource") DataSource datasource) {
         DataSourceTransactionManager dstm = new DataSourceTransactionManager();
         dstm.setDataSource(datasource);
         return dstm;
     }
-
 }

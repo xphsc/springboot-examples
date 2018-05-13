@@ -27,7 +27,7 @@ public class DruidAutoConfiguration {
    @Autowired
    private DatasourceProperties datasourceProperties;
 
-   @Bean
+    @Bean(name = "datasource")
    public DataSource dataSource() {
       DruidDataSource dataSource = new DruidDataSource();
       dataSource.setUrl(datasourceProperties.getUrl());
