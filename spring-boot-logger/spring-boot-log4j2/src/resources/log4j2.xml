@@ -19,7 +19,7 @@
         </RollingRandomAccessFile>
     </Appenders>
     <Loggers>
-        <Logger name="com.ovit" level="DEBUG"/>
+        <Logger name="com.xphsc" level="DEBUG"/>
         <Root level="INFO">
           <AppenderRef ref="Console" />
             <AppenderRef ref="RollingRandomAccessFile" />

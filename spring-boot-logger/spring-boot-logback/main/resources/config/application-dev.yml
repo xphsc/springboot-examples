@@ -1,5 +1,3 @@
 server:
-  port: 9023
+  port: 9024
 
-logging:
-  config: classpath:log4j2.xml

@@ -1,5 +1,6 @@
 package com.xphsc.log4j2;
 
+
 import org.springframework.boot.Banner;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
@@ -10,11 +11,13 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
  */
 @SpringBootApplication(scanBasePackages="com.xphsc")
 public class Log4j2Application {
-
     public static void main(String[] args) {
         new SpringApplicationBuilder()
                 .sources(Log4j2Application.class)
                 .bannerMode(Banner.Mode.CONSOLE)
                 .run(args);
+
     }
+
+
 }
