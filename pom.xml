@@ -33,6 +33,7 @@
         <module>spring-boot-logger</module>
         <module>spring-boot-aliyun</module>
         <module>spring-boot-doc</module>
+        <module>spring-boot-components</module>
     </modules>
 
     <parent>
