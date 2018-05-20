@@ -10,6 +10,21 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>spring-boot-components</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>spring-boot-mail</module>
+        <module>spring-boot-cache</module>
+        <module>spring-boot-front</module>
+        <module>spring-boot-template</module>
+        <module>spring-boot-fileupload</module>
+        <module>spring-boot-fastDFS</module>
+        <module>spring-boot-docker</module>
+        <module>../spring-boot-componentsspring-boot-junitMock</module>
+        <module>springboot-wechat</module>
+        <module>spring-boot-websocket</module>
+        <module>spring-boot-junitMock</module>
+        <module>spring-boot-qiniu</module>
+    </modules>
 
 
 </project>
