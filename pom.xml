@@ -32,13 +32,15 @@
         <module>spring-boot-easysql</module>
         <module>spring-boot-logger</module>
         <module>spring-boot-aliyun</module>
+        <module>spring-boot-doc</module>
     </modules>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>1.5.13.RELEASE</version>
-        <relativePath/> 
+        <relativePath/>
+
     </parent>
     <properties>
         <java.version>1.8</java.version>

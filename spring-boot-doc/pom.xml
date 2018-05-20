@@ -9,13 +9,11 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>spring-boot-easysql</artifactId>
+    <artifactId>spring-boot-doc</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>spring-boot-jdbc</module>
-        <module>spring-boot-jooq</module>
-        <module>spring-boot-querydsl</module>
-        <module>spring-boot-sql2o</module>
+        <module>spring-boot-swagger2</module>
+        <module>spring-boot-restdoc</module>
     </modules>
 <dependencies>
     <dependency>

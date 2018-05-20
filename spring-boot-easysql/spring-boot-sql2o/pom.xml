@@ -3,25 +3,18 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>springboot-examples</artifactId>
+        <artifactId>spring-boot-easysql</artifactId>
         <groupId>com.xphsc</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>spring-boot-easysql</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>spring-boot-jdbc</module>
-        <module>spring-boot-jooq</module>
-        <module>spring-boot-querydsl</module>
-        <module>spring-boot-sql2o</module>
-    </modules>
+    <artifactId>spring-boot-sql2o</artifactId>
 <dependencies>
     <dependency>
-        <artifactId>spring-boot-common</artifactId>
-        <groupId>com.xphsc</groupId>
-        <version>${parent.version}</version>
+        <groupId>org.sql2o</groupId>
+        <artifactId>sql2o</artifactId>
+        <version>1.5.4</version>
     </dependency>
 </dependencies>
 

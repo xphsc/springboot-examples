@@ -1,0 +1,8 @@
+server:
+  port: 9021
+
+
+springfox:
+  name: spring boot
+  title: spring boot测试
+  description: spring boot测试相关接口文档
