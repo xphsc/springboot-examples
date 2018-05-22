@@ -17,7 +17,7 @@
     </dependency>
     <dependency>
         <artifactId>spring-boot-common</artifactId>
-        <groupId>${parent.groupId}.${parent.artifactId}</groupId>
+        <groupId>com.xphsc</groupId>
         <version>${parent.version}</version>
     </dependency>
 </dependencies>

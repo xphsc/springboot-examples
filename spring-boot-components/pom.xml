@@ -19,11 +19,11 @@
         <module>spring-boot-fileupload</module>
         <module>spring-boot-fastDFS</module>
         <module>spring-boot-docker</module>
-        <module>../spring-boot-componentsspring-boot-junitMock</module>
         <module>springboot-wechat</module>
         <module>spring-boot-websocket</module>
         <module>spring-boot-junitMock</module>
         <module>spring-boot-qiniu</module>
+        <module>spring-boot-netty</module>
     </modules>
 
 
