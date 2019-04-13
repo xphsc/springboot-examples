@@ -1,2 +1,6 @@
 springboot-examples.iml
 *.iml
+spring-boot-mq/spring-boot-rabbitmq/target/
+spring-boot-thymeleaf/target/
+*/*/target
+*/target

@@ -1,0 +1,6 @@
+server:
+  port: 9025
+spring:
+  cache:
+    type: ehcache
+    config: classpath:config/ehcache.xml

@@ -7,7 +7,6 @@ spring:
                fastjson:
                  features: com.xphsc
       datasource:
-        default:
               name: test_mysql
               url: jdbc:mysql://localhost:3306/test_mysql?useUnicode=true&characterEncoding=UTF-8
               username: root
