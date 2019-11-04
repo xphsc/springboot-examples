@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xphsc.mybatis.mapper.UserMapper">
+<!--<resultMap id="BaseResultMap" type="com.xphsc.mybatis.model.User">
+  <id column="id" jdbcType="INTEGER" property="id" />
+  <result column="age" jdbcType="VARCHAR" property="age" />
+  <result column="password" jdbcType="VARCHAR" property="password" />
+</resultMap>-->
+<select id="selectALL" resultType="com.xphsc.mybatis.model.User" useCache="true">
+  SELECT * FROM  T_USER
+</select>
+</mapper>

@@ -9,18 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>spring-boot-quartz</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>spring-boot-scheduler</module>
-    </modules>
+    <artifactId>spring-boot-distransaction</artifactId>
 
-    <dependencies>
-    <dependency>
-    <groupId>org.quartz-scheduler</groupId>
-    <artifactId>quartz</artifactId>
-    <version>2.2.1</version>
-</dependency>
 
-</dependencies>
 </project>

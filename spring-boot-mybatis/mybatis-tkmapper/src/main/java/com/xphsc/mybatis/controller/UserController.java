@@ -17,9 +17,9 @@ import java.util.List;
 public class UserController {
     @Autowired
     private UserService userService;
-
     @GetMapping("/listUser")
     public Response listUser(){
+
         List<UserDTO> result= userService.listUser();
         return Response.successResult(result);
     }
