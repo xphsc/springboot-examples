@@ -16,17 +16,15 @@
         <module>spring-boot-thymeleaf</module>
         <module>spring-boot-jsp</module>
         <module>spring-boot-elasticsearch</module>
-        <module>spring-boot-dubbo</module>
         <module>spring-boot-mongodb</module>
-        <module>spring-boot-shiro</module>
         <module>spring-boot-redis</module>
         <module>spring-boot-jersey</module>
         <module>spring-boot-kotlin</module>
         <module>spring-boot-resteasy</module>
-        <module>spring-boo-activiti</module>
+        <module>spring-boot-activiti</module>
         <module>spring-boot-beetl</module>
         <module>spring-boot-mq</module>
-        <module>spring-boot-security</module>
+        <module>spring-boot-security-authentication</module>
         <module>spring-boot-quartz</module>
         <module>spring-boot-rpc</module>
         <module>spring-boot-easysql</module>
@@ -34,12 +32,15 @@
         <module>spring-boot-aliyun</module>
         <module>spring-boot-doc</module>
         <module>spring-boot-components</module>
+        <module>spring-boot-configurationcenter</module>
+        <module>spring-boot-sharding</module>
+        <module>spring-boot-distransaction</module>
     </modules>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.5.19.RELEASE</version>
+        <version>2.1.5.RELEASE</version>
         <relativePath/>
 
     </parent>
@@ -84,8 +85,8 @@
 
         <dependency>
             <groupId>com.github.xphsc</groupId>
-            <artifactId>eglsc-helper</artifactId>
-            <version>1.2.3</version>
+            <artifactId>xtool</artifactId>
+            <version>1.0.0</version>
         </dependency>
 
         <dependency>
@@ -94,11 +95,6 @@
             <version>1.16.12</version>
         </dependency>
 
-        <dependency>
-            <groupId>commons-fileupload</groupId>
-            <artifactId>commons-fileupload</artifactId>
-            <version>1.3.1</version>
-        </dependency>
 
         <dependency>
             <groupId>javax.servlet</groupId>

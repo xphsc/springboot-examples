@@ -24,7 +24,9 @@
         <module>spring-boot-junitMock</module>
         <module>spring-boot-qiniu</module>
         <module>spring-boot-netty</module>
+        <module>spring-boot-https</module>
+        <module>spring-boot-assembly</module>
+        <module>spring-boot-validation</module>
     </modules>
-
 
 </project>
