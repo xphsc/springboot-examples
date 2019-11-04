@@ -14,5 +14,4 @@
 </modules>
     <artifactId>spring-boot-security-authentication</artifactId>
     <packaging>pom</packaging>
-
 </project>

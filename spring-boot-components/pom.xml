@@ -28,5 +28,4 @@
         <module>spring-boot-assembly</module>
         <module>spring-boot-validation</module>
     </modules>
-
 </project>

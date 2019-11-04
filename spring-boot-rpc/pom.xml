@@ -15,7 +15,6 @@
         <module>spring-boot-dubbo</module>
         <module>spring-boot-motan</module>
         <module>spring-boot-grpc</module>
-
     </modules>
 
 
