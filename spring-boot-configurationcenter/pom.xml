@@ -9,18 +9,12 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>spring-boot-quartz</artifactId>
+    <artifactId>spring-boot-configurationcenter</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>spring-boot-scheduler</module>
+        <module>spring-boot-nacos</module>
+        <module>spring-boot-apollo</module>
     </modules>
 
-    <dependencies>
-    <dependency>
-    <groupId>org.quartz-scheduler</groupId>
-    <artifactId>quartz</artifactId>
-    <version>2.2.1</version>
-</dependency>
 
-</dependencies>
 </project>
