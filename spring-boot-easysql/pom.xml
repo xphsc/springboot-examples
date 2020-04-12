@@ -16,6 +16,7 @@
         <module>spring-boot-jooq</module>
         <module>spring-boot-querydsl</module>
         <module>spring-boot-sql2o</module>
+        <module>spring-boot-easyjdbc</module>
     </modules>
 <dependencies>
     <dependency>

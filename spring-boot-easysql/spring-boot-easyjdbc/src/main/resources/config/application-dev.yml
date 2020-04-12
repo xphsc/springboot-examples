@@ -1,0 +1,30 @@
+server:
+  port: 8105
+
+spring:
+    datasource:
+       datasource-name: default
+       driver-class-name: com.mysql.jdbc.Driver
+       username: root
+       password: root
+       url: jdbc:mysql://${MYSQL_HOST:localhost}:${MYSQL_PORT:3306}/easy_jdbc?useUnicode=true&useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC
+    datasources:
+         -  datasource-name: slave
+            url: jdbc:mysql://localhost:3306/easy_jdbc?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
+            username: root
+            password: root
+         -  datasource-name: master
+            url: jdbc:mysql://localhost:3306/easy_jdbc?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
+            username: root
+            password: root
+
+easyjdbc:
+ dialect: mysql
+ base-package: com.vrv.jdbc.dao
+ enabled: true
+ use-local-cache: true
+
+logging:
+  level:
+    com.vrv.jdbc: debug
+    root: error

@@ -35,6 +35,7 @@
         <module>spring-boot-configurationcenter</module>
         <module>spring-boot-sharding</module>
         <module>spring-boot-distransaction</module>
+        <module>spring-boot-dynamicDataSource</module>
     </modules>
 
     <parent>
